@@ -2,7 +2,7 @@ package uk.be2co.testcases;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import uk.be2co.core.BaseTest;
+import forall.core.BaseTest;
 import uk.be2co.pageobject.LoginPage;
 
 
@@ -53,12 +53,14 @@ public class LoginPageTest extends BaseTest {
     public void IncorrectPasswordLoginPage(){
         loadSiteUlr(URLLogin);
         String errorMessageText = new LoginPage()
-                .setUserName(wrongUserName)
-                .setPassword(Password)
+                .setUserName(UserName)
+                .setPassword(wrongPassword)
                 .clickLoginButtonNegative()
                 .getErrorMessage();
 
         Assert.assertEquals(errorMessageText, "Email address and password do not match");
     }
+
+
 
 }

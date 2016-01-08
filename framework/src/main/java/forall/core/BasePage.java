@@ -1,4 +1,4 @@
-package uk.be2co.core;
+package forall.core;
 
 
 import org.openqa.selenium.By;
@@ -28,4 +28,21 @@ public class BasePage {
     public String getText(By element){
         return findElement(element).getText();
     }
+
+    public void setRadioSelected(By element){
+        findElement(element).click();
+    }
+
+    public void selectFromDropDownList(By element){
+        findElement(element).click();
+    }
+
+    public void selectByValue(){
+
+    }
+
+
+
+
+
 }

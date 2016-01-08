@@ -1,7 +1,7 @@
 package uk.be2co.pageobject;
 
 import org.openqa.selenium.By;
-import uk.be2co.core.BasePage;
+import forall.core.BasePage;
 
 /**
  * Created by olja on 06/01/16.
