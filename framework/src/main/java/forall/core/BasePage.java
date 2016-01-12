@@ -37,12 +37,4 @@ public class BasePage {
         findElement(element).click();
     }
 
-    public void selectByValue(){
-
-    }
-
-
-
-
-
 }

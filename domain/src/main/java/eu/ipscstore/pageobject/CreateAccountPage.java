@@ -1,7 +1,7 @@
 package eu.ipscstore.pageobject;
 
-import org.openqa.selenium.By;
 import forall.core.BasePage;
+import org.openqa.selenium.By;
 import uk.be2co.pageobject.HomePage;
 
 
@@ -19,6 +19,7 @@ public class CreateAccountPage extends BasePage {
     private By checkboxSpesialOffers = By.id("optin");
     private By checkboxIAgree = By.id("customer_privacy");
     private By buttonRegister = By.id("submitAccount");
+  //  Select select = new Select();
 
 
 
@@ -89,7 +90,6 @@ public class CreateAccountPage extends BasePage {
         return this;
     }
 
-    //Переписать конечную страницу
     public HomePage clickRegisterButton() {
         click(buttonRegister);
         return new HomePage();
